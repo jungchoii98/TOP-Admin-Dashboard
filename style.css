@@ -29,7 +29,7 @@ button {
 
 body {
   display: grid;
-  grid-template: 1fr 6fr / 1fr 4fr;
+  grid-template-columns: 1fr 4fr;
   font-family: "Roboto", sans-serif;
 }
 
@@ -56,6 +56,10 @@ header img {
   margin: 0px;
 }
 
+header .greeting {
+  font-size: 25px;
+}
+
 button.row-2 {
   background-color: #4c0519;
   height: 50px;
@@ -76,7 +80,7 @@ button.row-2 {
 main {
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
   background-color: #efeff5;
   padding: 50px;
   gap: 25px;
@@ -100,8 +104,9 @@ main > #projects-container {
   border-left: 10px solid #522638;
 }
 
-main > #announcements-container {
-  grid-area: 1 / 2 / 2 / 3;
+#projects-container .project ul {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #announcements-container article {
@@ -113,10 +118,6 @@ main > #announcements-container {
 #announcements-container article div {
   margin-bottom: 10px;
   border-bottom: 1px solid black;
-}
-
-main > #trending-container {
-  grid-area: 2 / 2 / 3 / 3;
 }
 
 #trending-container article {
@@ -138,19 +139,24 @@ nav {
   background-color: #4c0519;
   padding: 16px;
   color: white;
+  font-weight: bold;
 }
 
 nav .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 35px;
   padding-left: 8px;
 }
 
 nav .sidebar ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
+}
+
+nav ul span {
+  font-size: 16px;
 }
 
 nav .sidebar div,
@@ -158,4 +164,12 @@ nav .sidebar li {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.dashboard-logo img {
+  height: 50px;
+}
+
+.dashboard-logo span {
+  font-size: 35px;
 }
