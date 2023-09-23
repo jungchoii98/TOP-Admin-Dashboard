@@ -49,6 +49,15 @@ header ul li:nth-child(2) {
   margin-right: auto;
 }
 
+header ul:first-child li:nth-child(2) {
+  flex: 1;
+  display: flex;
+}
+
+header ul li:nth-child(2) #search-box {
+  flex: 1;
+}
+
 header button,
 header span,
 header img {
@@ -72,8 +81,7 @@ button.row-2 {
   border: none;
   height: 25px;
   min-width: 150px;
-  width: 250px;
-  max-width: 500px;
+  max-width: 650px;
   border-radius: 50px;
 }
 
