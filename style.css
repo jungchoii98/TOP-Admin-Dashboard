@@ -1,5 +1,19 @@
 @import url(./node_modules/normalize.css/normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: Roboto;
+  src: url('./Roboto/Roboto-Black.ttf'),
+  url('./Roboto/Roboto-BlackItalic.ttf'),
+  url('./Roboto/Roboto-Bold.ttf'),
+  url('./Roboto/Roboto-BoldItalic.ttf'),
+  url('./Roboto/Roboto-Italic.ttf'),
+  url('./Roboto/Roboto-Light.ttf'),
+  url('./Roboto/Roboto-LightItalic.ttf'),
+  url('./Roboto/Roboto-Medium.ttf'),
+  url('./Roboto/Roboto-MediumItalic.ttf'),
+  url('./Roboto/Roboto-Regular.ttf'),
+  url('./Roboto/Roboto-Thin.ttf');
+}
 
 *::before,
 *::after,
@@ -30,7 +44,7 @@ button {
 body {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 header {
